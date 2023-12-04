@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+* {
+    font-family: 'Nunito', cursive;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(51, 59, 54, 0.979);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+a {
+    color: rgb(80, 155, 75);
+}
+
+.logo {
+    max-width: 600px;
+    margin: -130px;
+}
+
+.container-input {
+    max-width: 480px;
+    margin: 14px 0;
+    text-align: center;
+
+}
+
+.container-input span {
+    color: aliceblue;
+    font-size: 22px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 10px;
+    background-color: gainsboro;
+    height: 18px;
+    outline: none;
+    margin-top: 10px;
+}
+
+.button {
+    height: 40px;
+    background-color: rgb(80, 155, 75);
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.container-password {
+    max-width: 480px;
+    margin: 14px, 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    color: aliceblue;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.password {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.password:hover {
+    transform: scale(1.05);
+}
+
+.tooltip {
+    color: aliceblue;
+    position: relative;
+    top: 10px;
+    padding: 6px 8px;
+    text-align: center;
+    font-size: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.hide {
+    display: none;
+}
+
+.container-password:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #dcdcdc;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
