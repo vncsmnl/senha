@@ -19,6 +19,25 @@
         <span>Tamanho <span id="valor"></span> de Senha </span>
         <input type="range" min="5" max="25" value="15" class="slider" id="slider">
 
+        <div class="checkbox-container">
+            <div class="checkbox-item">
+                <input type="checkbox" id="includeLowercase" checked>
+                <label for="includeLowercase">Minúsculas</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="includeUppercase" checked>
+                <label for="includeUppercase">Maiúsculas</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="includeNumbers" checked>
+                <label for="includeNumbers">Números</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="includeSpecial" checked>
+                <label for="includeSpecial">Especiais</label>
+            </div>
+        </div>
+
         <button id="buttom" class="button" onclick="genPass()">GERAR SENHA</button>
     </main>
 
